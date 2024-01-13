@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Remix CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Goods.</title>
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="container">
+        <div class="logo">
+          <h1>Goods.</h1>
+        </div>
+
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#review">Testimonial</a></li>
+        </ul>
+
+        <div class="right-navbar">
+          <div class="social-icon">
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+          </div>
+          <button id="searchBar"><i class="ri-search-2-line"></i></button>
+          <div class="hamburger-menu" onclick="openNav()">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal-searchBar">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="group">
+          <i class="ri-search-2-line"></i>
+          <input placeholder="Search" type="search" class="input" />
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            It's proudly for us to build stylish & featured interior design
+          </h1>
+
+          <button>Learn more</button>
+
+          <div class="hero-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              aliquam quidem blanditiis explicabo
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+              id commodi maxime accusamusx
+            </p>
+          </div>
+        </div>
+        <img src="https://img.freepik.com/free-photo/3d-rendering-minimalist-interior-with-copy-space_23-2150943528.jpg?w=996&t=st=1705144609~exp=1705145209~hmac=bac51b47e5b0d3d0e0aba411f837046901729b17f2fade33bfc1265beff53e1f" alt="" class="img-background"/>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="service">
+      <div class="container">
+        <div class="service-title">
+          <div class="line"></div>
+          <h1>
+            Benefits you get <br />
+            using our products
+          </h1>
+        </div>
+
+        <div class="serviceCard-wrapper">
+          <div class="service-card">
+            <img src="assets/icon/icons8-bank-cards-64.png" alt="" />
+            <h2 class="card-title">Secure Payment</h2>
+            <p class="card-subject">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              delectus ut sed minus expedita perspiciatis
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img src="assets/icon/icons8-fast-delivery-64.png" alt="" />
+            <h2 class="card-title">Fast Delivery</h2>
+            <p class="card-subject">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              delectus ut sed minus expedita perspiciatis
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img src="assets/icon/icons8-handle-with-care-64.png" alt="" />
+            <h2 class="card-title">Handle with Care</h2>
+            <p class="card-subject">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              delectus ut sed minus expedita perspiciatis
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="about-image">
+          <img src="assets/img/about-img.jpg" alt="" />
+          <div class="img-wrapper2">
+            <img src="assets/img/about-img2.jpg" alt="" />
+            <img src="assets/img/about-img3.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h1>
+            Our work process make
+            <span class="highlight">your dream ture</span>
+          </h1>
+
+          <div class="feature">
+            <div class="content">
+              <i class="ri-arrow-right-double-fill"></i>
+              <div class="desc">
+                <h2>Perfection in Every Inch</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia
+                </p>
+              </div>
+            </div>
+
+            <div class="content">
+              <i class="ri-arrow-right-double-fill"></i>
+              <div class="desc">
+                <h2>Simple Idea & Design</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia
+                </p>
+              </div>
+            </div>
+
+            <div class="content">
+              <i class="ri-arrow-right-double-fill"></i>
+              <div class="desc">
+                <h2>Comfortable Support</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product">
+      <div class="container">
+        <div class="product-title">
+          <h1>
+            Crafted with <span class="highlight">Excellent Material</span>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            perspiciatis nemo! Vero qui modi reiciendis quo,
+          </p>
+          <div class="buttonProduct">
+            <a href="components/product/product.html">See more</a>
+            <i class="ri-arrow-right-double-fill"></i>
+          </div>
+        </div>
+
+        <div class="swiper product-content">
+          <div class="swiper-wrapper productCard-wrapper">
+            <div class="swiper-slide card-product">
+              <div class="card-image">
+                <img src="assets/img/arm-chair-01.png" alt="" />
+              </div>
+
+              <div class="card-content">
+                <h2>Chair Unique</h2>
+                <p>$350</p>
+              </div>
+
+              <div class="card-button">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-product">
+              <div class="card-image">
+                <img src="assets/img/arm-chair-03.png" alt="" />
+              </div>
+              <div class="card-content">
+                <h2>Chair Unique</h2>
+                <p>$350</p>
+              </div>
+
+              <div class="card-button">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-product">
+              <div class="card-image">
+                <img src="assets/img/p9.png" alt="" />
+              </div>
+
+              <div class="card-content">
+                <h2>Amaze Chair</h2>
+                <p>$250</p>
+              </div>
+
+              <div class="card-button">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-product">
+              <div class="card-image">
+                <img src="assets/img/p12.png" alt="" />
+              </div>
+
+              <div class="card-content">
+                <h2>Softly Chair</h2>
+                <p>$299</p>
+              </div>
+
+              <div class="card-button">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-product">
+              <div class="card-image">
+                <img src="assets/img/p1.png" alt="" />
+              </div>
+
+              <div class="card-content">
+                <h2>Simple Sofa</h2>
+                <p>$349</p>
+              </div>
+
+              <div class="card-button">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+
+            <div class="swiper-slide card-product">
+              <div class="card-image">
+                <img src="assets/img/p4.png" alt="" />
+              </div>
+
+              <div class="card-content">
+                <h2>Long Chair</h2>
+                <p>$499</p>
+              </div>
+
+              <div class="card-button">
+                <i class="ri-add-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category -->
+    <section id="category">
+      <div class="container">
+        <aside class="tab">
+          <button
+            class="tablinks"
+            onclick="openCity(event, 'sofa')"
+            id="defaultOpen"
+          >
+            Sofa
+            <img class="tablinks-Img" src="assets/icon/aside-sofa.png" alt="" />
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'chair')">
+            Chair
+            <img
+              class="tablinks-Img"
+              src="assets/icon/aside-chair.png"
+              alt=""
+            />
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'table')">
+            Table
+            <img
+              class="tablinks-Img"
+              src="assets/icon/aside-table.png"
+              alt=""
+            />
+          </button>
+          <button
+            class="tablinks"
+            onclick="openCity(event, 'lamp')"
+            id="defaultOpen"
+          >
+            Lamp
+            <img class="tablinks-Img" src="assets/icon/aside-lamp.png" alt="" />
+          </button>
+        </aside>
+
+        <div class="tabContent-wrapper">
+          <div id="sofa" class="tabcontent">
+            <div class="wrapper">
+              <img src="assets/img/sofa-category.jpg" alt="" />
+              <div class="tab-desc">
+                <h2>Sofa</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda dolor dolore, modi minima eum voluptate magnam!
+                  Harum deleniti et temporibus ad iure ipsum quibusdam, debitis
+                  possimus ratione, minima perspiciatis atque.
+                </p>
+              </div>
+              <button>more product --></button>
+            </div>
+          </div>
+
+          <div id="chair" class="tabcontent">
+            <div class="wrapper">
+              <img src="assets/img/img1.jpg" alt="" />
+              <div class="tab-desc">
+                <h2>Chair</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda dolor dolore, modi minima eum voluptate magnam!
+                  Harum deleniti et temporibus ad iure ipsum quibusdam, debitis
+                  possimus ratione, minima perspiciatis atque.
+                </p>
+              </div>
+              <button>more product --></button>
+            </div>
+          </div>
+
+          <div id="table" class="tabcontent">
+            <div class="wrapper">
+              <img src="assets/img/table-category.jpg" alt="" />
+              <div class="tab-desc">
+                <h2>Table</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda dolor dolore, modi minima eum voluptate magnam!
+                  Harum deleniti et temporibus ad iure ipsum quibusdam, debitis
+                  possimus ratione, minima perspiciatis atque.
+                </p>
+              </div>
+              <button>more product --></button>
+            </div>
+          </div>
+
+          <div id="lamp" class="tabcontent">
+            <div class="wrapper">
+              <img src="assets/img/lamp-category.jpg" alt="" />
+              <div class="tab-desc">
+                <h2>Lamp</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda dolor dolore, modi minima eum voluptate magnam!
+                  Harum deleniti et temporibus ad iure ipsum quibusdam, debitis
+                  possimus ratione, minima perspiciatis atque.
+                </p>
+              </div>
+              <button>more product --></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section id="review">
+      <div class="container">
+        <div class="review-title">
+          <div class="line"></div>
+          <h1>
+            We our customers <br />
+            are saying
+          </h1>
+        </div>
+
+        <div class="cardReview-wrapper">
+          <article class="card-review">
+            <i class="ri-double-quotes-l"></i>
+            <h1>The results given are very satisfying.</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              est laboriosam ipsum.
+            </p>
+            <div class="user">
+              <img src="assets/img/review-img2.jpg" alt="" />
+              <h2>
+                Friska <br />
+                Vocabulary
+              </h2>
+            </div>
+          </article>
+
+          <article class="card-review">
+            <i class="ri-double-quotes-l"></i>
+            <h1>The service provided is very good and friendly</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              est laboriosam ipsum.
+            </p>
+            <div class="user">
+              <img src="assets/img/review-img.jpg" alt="" />
+              <h2>
+                Laras <br />
+                Santika
+              </h2>
+            </div>
+          </article>
+
+          <article class="card-review">
+            <i class="ri-double-quotes-l"></i>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              est laboriosam ipsum.
+            </p>
+            <div class="user">
+              <img src="assets/img/review-img3.jpg" alt="" />
+              <h2>
+                Jake <br />
+                Santoso
+              </h2>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="brand">
+          <h1>Goods.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="socialFooter">
+            <a href=""><i class="ri-facebook-fill"></i></a>
+            <a href=""><i class="ri-tiktok-fill"></i></a>
+            <a href=""><i class="ri-twitter-x-fill"></i></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="support">
+          <h2>Support</h2>
+          <div class="links">
+            <li><a href="">about us</a></li>
+            <li><a href="">features</a></li>
+            <li><a href="">news</a></li>
+            <li><a href="">carrers</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <h2>Category</h2>
+          <div class="links">
+            <li><a href="">Sofa</a></li>
+            <li><a href="">Chair</a></li>
+            <li><a href="">Table</a></li>
+            <li><a href="">Lamp</a></li>
+            <li><a href="">Accessories</a></li>
+          </div>
+        </div>
+
+        <div class="navlinks">
+          <h2>Links</h2>
+          <div class="links">
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Reviews</a></li>
+          </div>
+        </div>
+
+        <div class="address">
+          <h2>Contact Us</h2>
+          <div class="contact">
+            <p>+62 888282372</p>
+            <p>goodinterior@goods.com</p>
+            <p>Indonesia, East Jakarta, Jakarta</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="copyrightContent">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="footerPayment">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="visa" />
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/mastercard.png"
+            alt="mastercard"
+          />
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/amazon.png"
+            alt="amazon"
+          />
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/paypal.png"
+            alt="paypal"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>

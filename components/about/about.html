@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="about.css" />
+
+    <title>product</title>
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="container">
+        <div class="logo">
+          <h1>Goods.</h1>
+        </div>
+
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/components/product/product.html">Product</a></li>
+            <li><a href="/components/about/about.html">About</a></li>
+            <li><a href="#review">Review</a></li>
+          </ul>
+
+        <div class="right-navbar">
+          <div class="social-icon">
+            <a href=""><i class="ri-instagram-line"></i></a>
+            <a href=""><i class="ri-pinterest-line"></i></a>
+            <a href=""><i class="ri-twitter-x-line"></i></a>
+          </div>
+          <button id="searchBar"><i class="ri-search-2-line"></i></button>
+          <div class="hamburger-menu" onclick="openNav()">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal-searchBar">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="group">
+          <i class="ri-search-2-line"></i>
+          <input placeholder="Search" type="search" class="input" />
+        </div>
+      </div>
+    </div>
+
+    <!-- list product -->
+    <aside class="sidebar">
+        <div class="category">
+            <form class="option">
+                
+            </form>
+        </div>
+    </aside>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="product.css" />
+
+    <title>product</title>
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="container">
+        <div class="logo">
+          <h1>Goods.</h1>
+        </div>
+
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/components/product/product.html">Product</a></li>
+          <li><a href="/components/about/about.html">About</a></li>
+          <li><a href="#review">Review</a></li>
+        </ul>
+
+        <div class="right-navbar">
+          <div class="social-icon">
+            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-user-3-line"></i>
+          </div>
+          <button id="searchBar"><i class="ri-search-2-line"></i></button>
+          <div class="hamburger-menu" onclick="openNav()">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal-searchBar">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="group">
+          <i class="ri-search-2-line"></i>
+          <input placeholder="Search" type="search" class="input" />
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="aside-container">
+        <div class="sidebar-title">
+          <h2>SHOP BY</h2>
+        </div>
+
+        <div class="category">
+          <h3>Category</h3>
+          <div class="option">
+            <input type="radio" id="sofa" name="interior" value="sofa" />
+            <label for="sofa">Sofa</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="chair" name="interior" value="chair" />
+            <label for="chair">Chair</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="table" name="interior" value="table" />
+            <label for="table">Table</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="lamp" name="interior" value="lamp" />
+            <label for="lamp">Lamp</label>
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Brand</h3>
+          <div class="option">
+            <input type="radio" id="IKEA" name="brand" value="IKEA" />
+            <label for="IKEA">IKEA</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="ACE" name="brand" value="ACE" />
+            <label for="ACE">ACE Hardware</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="Informa" name="brand" value="Informa" />
+            <label for="Informa">Informa</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="Olympic" name="brand" value="Olympic" />
+            <label for="Olympic">Olympic</label>
+          </div>
+        </div>
+
+        <div class="category">
+          <h3>Price</h3>
+          <div class="sliderPrice">
+            <p>Rp. <span id="valueRange"></span></p>
+            <input
+              type="range"
+              min="50000"
+              max="5000000"
+              value="100000"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <!-- list Product -->
+      <div class="nav-products">
+        <div class="sortby">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              Sort by <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Price</a>
+              <a href="#">Type</a>
+              <a href="#">Position</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="layout-icons">
+          <i class="ri-menu-line"></i>
+          <i class="ri-sort-desc"></i>
+        </div>
+      </div>
+
+      <div class="cardProduct-wrapper">
+        <div class="cardProduct">
+          <img src="/assets/img/p1.png" alt="" />
+          <div class="desc">
+            <p>Interior</p>
+            <h3>Green Leaf Sofa</h3>
+            <div class="rating">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+              <span>1299 reviews</span>
+            </div>
+            <h2 class="priceTag">$299</h2>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="cardProduct">
+          <img src="/assets/img/p4.png" alt="" />
+          <div class="desc">
+            <p>Interior</p>
+            <h3>Green Leaf Sofa</h3>
+            <div class="rating">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+              <span>1299 reviews</span>
+            </div>
+            <h2 class="priceTag">$299</h2>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cardProduct">
+          <img src="/assets/img/p5.png" alt="" />
+          <div class="desc">
+            <p>Interior</p>
+            <h3>Green Leaf Sofa</h3>
+            <div class="rating">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+              <span>1299 reviews</span>
+            </div>
+            <h2 class="priceTag">$299</h2>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="cardProduct">
+          <img src="/assets/img/p9.png" alt="" />
+          <div class="desc">
+            <p>Interior</p>
+            <h3>Green Leaf Sofa</h3>
+            <div class="rating">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+              <span>1299 reviews</span>
+            </div>
+            <h2 class="priceTag">$299</h2>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="cardProduct">
+          <img src="/assets/img/p12.png" alt="" />
+          <div class="desc">
+            <p>Interior</p>
+            <h3>Green Leaf Sofa</h3>
+            <div class="rating">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-half-s-fill"></i>
+              <span>1299 reviews</span>
+            </div>
+            <h2 class="priceTag">$299</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="brand">
+          <h1>Goods.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="socialFooter">
+            <a href=""><i class="ri-facebook-fill"></i></a>
+            <a href=""><i class="ri-tiktok-fill"></i></a>
+            <a href=""><i class="ri-twitter-x-fill"></i></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="support">
+          <h2>Support</h2>
+          <div class="links">
+            <li><a href="">about us</a></li>
+            <li><a href="">features</a></li>
+            <li><a href="">news</a></li>
+            <li><a href="">carrers</a></li>
+          </div>
+        </div>
+
+        <div class="category">
+          <h2>Category</h2>
+          <div class="links">
+            <li><a href="">Sofa</a></li>
+            <li><a href="">Chair</a></li>
+            <li><a href="">Table</a></li>
+            <li><a href="">Lamp</a></li>
+            <li><a href="">Accessories</a></li>
+          </div>
+        </div>
+
+        <div class="navlinks">
+          <h2>Links</h2>
+          <div class="links">
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Reviews</a></li>
+          </div>
+        </div>
+
+        <div class="address">
+          <h2>Contact Us</h2>
+          <div class="contact">
+            <p>+62 888282372</p>
+            <p>goodinterior@goods.com</p>
+            <p>Indonesia, East Jakarta, Jakarta</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="copyrightContent">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="footerPayment">
+          <img src="https://img.icons8.com/color/48/visa.png" alt="visa" />
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/mastercard.png"
+            alt="mastercard"
+          />
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/amazon.png"
+            alt="amazon"
+          />
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/paypal.png"
+            alt="paypal"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
